@@ -7,7 +7,7 @@
 @endphp
 
 <div class="col-md-12" style="padding-left: 0px;">
-	<label for="nrc_no">{{ trans('myanmarnrc.nrc') }}</label>
+	<label for="nrc_no">NRC</label>
 	<div class="row" style="padding-top: 0px; margin-top: 0px;">
 		<div class="col-md-2 col-5 pr-1">
 			<select class="form-control" name="state_region" id="state_region" style="padding-top: 0px; margin-top: 0px !important; margin-bottom: 0px;">
