@@ -2164,7 +2164,7 @@ return [
 			'township_mm'	=>	'အမတ',	
 		],
 		[
-			'id'		=>	371,
+			// 'id'		=>	371,
 			'region_id'	=>	14,		
 			'township_mm'	=>	'အမန',	
 		],

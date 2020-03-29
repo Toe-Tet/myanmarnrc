@@ -5,7 +5,7 @@ Other functions related with NRC are also included.
 
 ## Installation
 ```bash
-composer require toetet\myanmarnrc
+composer require toetet/myanmarnrc
 ```
 
 Publish configuration and asset files
