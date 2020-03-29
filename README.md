@@ -16,9 +16,9 @@ php artisan vendor:publish --provider="Toetet\MyanmarNrc\MyanmarNrcServiceProvid
 This will add new configuration file, js file and blade file
 
 You can find 
-- config file in config/myanmarnrc.php
-- js file in public/vendor/myanmarnrc.js
-- blade file in resources/views/vendor/myanmarnrc/input.blade.php
+- config file at config/myanmarnrc.php
+- js file at public/vendor/myanmarnrc.js
+- blade file at resources/views/vendor/myanmarnrc/input.blade.php
 
 ## Documentation
 #### Include NRC Filter Input
