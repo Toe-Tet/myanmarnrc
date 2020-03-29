@@ -29,11 +29,11 @@ In your blade file, you can get NRC filter input easily as below.
 
 #### Get NRC Input Data
 ```bash
-Nrc::data($request);					// 		1/KaMaTa(N)849832
+Nrc::data($request);				// 		1/KaMaTa(N)849832
 
 Nrc::stateregion($request);			//		1
 
-Nrc::citizen($request);					//		N
+Nrc::citizen($request);				//		N
 
 Nrc::township($request);			//		KaMaTa
 
