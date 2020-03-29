@@ -1,0 +1,14 @@
+{
+    "name": "toetet/myanmarnrc",
+    "description": "Package for Myanmar National Registration Card",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toe-Tet",
+            "email": "toetet248@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
