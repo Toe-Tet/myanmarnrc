@@ -17,7 +17,7 @@
             "email": "toetet248@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.2.5",
         "illuminate/support": "~5.8.0|^6.0|^7.0",
