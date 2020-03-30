@@ -40,7 +40,7 @@ In your blade file, you can get NRC filter input easily as below.
 ```bash
 Nrc::data($request);				// 		1/KaMaTa(N)849832
 
-Nrc::stateregion($request);			//		1
+Nrc::stateRegion($request);			//		1
 
 Nrc::citizen($request);				//		N
 

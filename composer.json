@@ -1,6 +1,13 @@
 {
     "name": "toetet/myanmarnrc",
     "description": "Package for Myanmar National Registration Card",
+    "keywords": [
+        "toetet",
+        "laravel",
+        "myanmar",
+        "nrc",
+        "national registration card"
+      ],
     "type": "library",
     "homepage": "https://github.com/Toe-Tet/myanmarnrc",
     "license": "MIT",
@@ -12,7 +19,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.2.5",
+        "illuminate/support": "~5.8.0|^6.0|^7.0",
+        "laravel/helpers": "^1.1",
     },
     "autoload": {
         "psr-4": {

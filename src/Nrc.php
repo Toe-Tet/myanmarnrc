@@ -16,7 +16,7 @@ class Nrc {
     	return $request->state_region.'/'.$request->township.'('.$request->citizen.')'.$request->number;
     }
 
-    public function stateregion(Request $request)
+    public function stateRegion(Request $request)
     {
     	return $request->state_region;    
     }
