@@ -1,5 +1,5 @@
 # Myanmar NRC
-This package is for the developer who difficult to find Myanmar NRC data. It is including to filter related townships with related regions.
+This package is for developers who difficult to find Myanmar NRC data. It is including to filter related townships with related regions.
 
 Other functions related with NRC are also included.
 
@@ -22,7 +22,7 @@ You can find
 
 In thease publish files, you are free to change them to anything to better match your application.
 
-Bootstrap and Jquery are require.
+Bootstrap and Jquery are require. Bootstrap is for just better look.
 ```bash
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -49,5 +49,23 @@ Nrc::township($request);			//		KaMaTa
 Nrc::number($request);				//		849832
 ```
 
+#### Get State Region, Township, Citizen, Number by NRC String
+NRC string must be valid format.
+In the format, "/", "(", ")" characters are essential.
+```bash
+$nrc = 	"Kachin/KAMATA(NAING)849832";			// {state_region}/{township}({citizen}){number}
+$nrc = 	"ကချင်ပြည်နယ်/ကမတ(နိုင်)၈၄၉၈၃၂";			// {state_region}/{township}({citizen}){number}
+$nrc = 	"1/KaMaTa(N)849832";					// {state_region}/{township}({citizen}){number}
+
+Nrc::getStateRegion($nrc);			//		1
+
+Nrc::getCitizen($nrc);				//		N
+
+Nrc::getTownship($nrc);				//		KaMaTa
+
+Nrc::getNumber($nrc);				//		849832
+```
+
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This package is open-sourced software licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
+You are free to use it in personal and commercial projects.
