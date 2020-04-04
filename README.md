@@ -53,11 +53,11 @@ Nrc::number($request);				//		849832
 NRC string must be valid format.
 In the format, "/", "(", ")" characters are essential.
 ```bash
-$nrc = 	"Kachin/KAMATA(NAING)849832";		// {state_region}/{township}({citizen}){number}
+$nrc = 	"Kachin/KAMATA(NAING)849832";		//		{state_region}/{township}({citizen}){number}
 
-$nrc = 	"ကချင်ပြည်နယ်/ကမတ(နိုင်)၈၄၉၈၃၂";		// {state_region}/{township}({citizen}){number}
+$nrc = 	"ကချင်ပြည်နယ်/ကမတ(နိုင်)၈၄၉၈၃၂";		//		{state_region}/{township}({citizen}){number}
 
-$nrc = 	"1/KaMaTa(N)849832";			// {state_region}/{township}({citizen}){number}
+$nrc = 	"1/KaMaTa(N)849832";			//		{state_region}/{township}({citizen}){number}
 
 Nrc::getStateRegion($nrc);			//		1
 
