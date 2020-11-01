@@ -22,12 +22,12 @@ class Nrc {
 
     public function data(Request $request)
     {
-    	return $request->state_region.'/'.$request->township.'('.$request->citizen.')'.$request->number;
+    	return $request->nrc_state_region.'/'.$request->nrc_township.'('.$request->nrc_citizen.')'.$request->nrc_number;
     }
 
     public function stateRegion(Request $request)
     {
-    	return $request->state_region;    
+    	return $request->nrc_state_region;    
     }
 
     public function getStateRegion($nrc)
@@ -48,7 +48,7 @@ class Nrc {
 
     public function township(Request $request)
     {
-    	return $request->township;    
+    	return $request->nrc_township;    
     }
 
     public function getTownship($nrc)
@@ -58,7 +58,7 @@ class Nrc {
 
     public function number(Request $request)
     {
-    	return $request->number;    
+    	return $request->nrc_number;    
     }
 
     public function getNumber($nrc)
