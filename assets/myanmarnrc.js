@@ -1,5 +1,5 @@
 // function when state_region input change
-$('#state_region').on('change', function(){
+$('#nrc_state_region').on('change', function(){
 
 	// get state_region input value
 	var state_region = $(this).val();
@@ -13,7 +13,7 @@ $('#state_region').on('change', function(){
 	});
 
 	// restart townwhip select input
-	$('#township').html('');
+	$('#nrc_township').html('');
 
 	// declare variable to assign township input select options
 	var townships_options = '';
@@ -38,7 +38,7 @@ $('#state_region').on('change', function(){
 	});
 
 	// set townships input select options
-	$('#township').html(townships_options);
+	$('#nrc_township').html(townships_options);
 });
 
 /**
