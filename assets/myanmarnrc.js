@@ -5,10 +5,10 @@ $('#nrc_state_region').on('change', function(){
 	var nrc_state_region = $(this).val();
 
 	// search region_id by nrc_state_region value
-	nrc_state_region = searchRegion(nrc_state_region, nrc_regions, nrc_language).id;
+	nrc_state_region = searchRegion(nrc_state_region, mmnrc_regions, mmnrc_language).id;
 
 	// filter townships by nrc_state_region value
-	var nrc_townships = nrc_townships.filter(function(township) {
+	var nrc_townships = mmnrc_townships.filter(function(township) {
 		return township.region_id === parseInt(nrc_state_region)
 	});
 
@@ -21,13 +21,13 @@ $('#nrc_state_region').on('change', function(){
 	// loop filter townships and create string for townships input select options
 	nrc_townships.forEach(function(township){
 
-		if(nrc_language === "mm"){
+		if(mmnrc_language === "mm"){
 			nrc_townships_options +=
 			'<option value="'+township.township_mm+'">'+
 				township.township_mm+
 			'</option>';
 		} else {
-			var township_en = nrc_characters[township.township_mm[0]] + nrc_characters[township.township_mm[1]] + nrc_characters[township.township_mm[2]];
+			var township_en = mmnrc_characters[township.township_mm[0]] + mmnrc_characters[township.township_mm[1]] + mmnrc_characters[township.township_mm[2]];
 
 			nrc_townships_options +=
 			'<option value="'+township_en+'">'+

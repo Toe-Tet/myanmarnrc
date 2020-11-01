@@ -14,7 +14,7 @@
 				<option value="" disabled selected></option>
 			  @foreach($nrc_regions as $region)
 				  	<option value="{{ $nrc_language == 'mm' ? $region['region_mm'] : $region['region_en'] }}">
-				  		{{ app()->getLocale() == 'mm' ? $region['region_mm'] : $region['region_en']  }}
+				  		{{ $nrc_language == 'mm' ? $region['region_mm'] : $region['region_en']  }}
 				  	</option>
 			  @endforeach
 			</select>
@@ -29,7 +29,7 @@
 				<option value="" disabled selected></option>
 			  @foreach($nrc_citizens as $citizen)
 			  <option value="{{ $nrc_language == 'mm' ? $citizen['citizen_mm'] : $citizen['citizen_en'] }}">
-			  	{{ app()->getLocale() == 'mm' ? $citizen['citizen_mm'] : $citizen['citizen_en'] }}
+			  	{{ $nrc_language == 'mm' ? $citizen['citizen_mm'] : $citizen['citizen_en'] }}
 			  </option>
 			  @endforeach
 			</select>
@@ -43,16 +43,16 @@
 
 <script>
 	// get NRC Townships data from myanmarnrc.php config file
-	var nrc_regions = {!! json_encode($nrc_regions) !!};
+	var mmnrc_regions = {!! json_encode($nrc_regions) !!};
 
 	// get NRC Townships data from myanmarnrc.php config file
-	var nrc_townships = {!! json_encode($nrc_townships) !!};
+	var mmnrc_townships = {!! json_encode($nrc_townships) !!};
 
 	// get NRC characters data from myanmarnrc.php config file
-	var nrc_characters = {!! json_encode($nrc_characters) !!};
+	var mmnrc_characters = {!! json_encode($nrc_characters) !!};
 
 	// get language data from myanmarnrc.php config file
-	var nrc_language = "{{ $nrc_language }}";
+	var mmnrc_language = "{{ $nrc_language }}";
 </script>
 
 <script src="{{ asset('vendor/myanmarnrc/myanmarnrc.js') }}"></script>
