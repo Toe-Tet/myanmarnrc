@@ -38,7 +38,7 @@ class Nrc {
 
     public function citizen(Request $request)
     {
-    	return $request->citizen;    
+    	return $request->nrc_citizen;    
     }
 
     public function getCitizen($nrc)
